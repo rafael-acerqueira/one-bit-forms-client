@@ -5,10 +5,12 @@ import { ColorPickerModule } from 'ngx-color-picker';
 import { ChartsModule } from 'ng2-charts';
 
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
