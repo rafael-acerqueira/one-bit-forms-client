@@ -4,7 +4,7 @@
     <app-graph-number [questions_answers]="question.questions_answers"></app-graph-number>
   </div>
   <div *ngIf="question.kind == 'boolean'">
-      <!-- <app-graph-boolean [questions_answers]="question.questions_answers"></app-graph-boolean> -->
+    <app-graph-boolean [questions_answers]="question.questions_answers"></app-graph-boolean>
   </div>
   <div *ngIf="question.kind == 'short_text' || question.kind == 'long_text' ">
     <app-graph-text [questions_answers]="question.questions_answers"></app-graph-text>
