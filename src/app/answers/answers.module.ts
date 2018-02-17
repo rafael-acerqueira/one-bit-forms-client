@@ -11,6 +11,7 @@ import { MaterializeModule } from 'ng2-materialize';
 import { AllComponent } from './answer-list/all/all.component';
 import { IndividualComponent } from './answer-list/individual/individual.component';
 import { ChartsModule } from 'ng2-charts/ng2-charts';
+import { AnswerCompleteComponent } from './answer-complete/answer-complete.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { ChartsModule } from 'ng2-charts/ng2-charts';
     GraphTextComponent,
     AnswerNewComponent,
     AllComponent,
-    IndividualComponent
+    IndividualComponent,
+    AnswerCompleteComponent
   ]
 })
 export class AnswersModule { }
