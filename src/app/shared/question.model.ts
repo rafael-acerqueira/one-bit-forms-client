@@ -4,6 +4,7 @@ import { QuestionsAnswer } from './questions_answer.model';
 export class Question {
     id: number;
     title: string;
+    required: boolean;
     kind: string;
     form_id: number;
     questions_answers: QuestionsAnswer[] = [];
@@ -11,6 +12,7 @@ export class Question {
     constructor(questionInfo: any) {
         this.id = questionInfo.id;
         this.title = questionInfo.title;
+        this.required = questionInfo.required;
         this.kind = questionInfo.kind;
         this.form_id = questionInfo.form_id;
         this.includeQuestionsAnswers(questionInfo.questions_answers);

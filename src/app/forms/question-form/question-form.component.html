@@ -24,6 +24,19 @@
           </div>
         </div>
         <div class="row">
+          <div class="col m3">
+            <mz-switch-container>
+              <label for="switch-id"> É obrigatório?</label>
+              <input mz-switch
+                id="switch-id"
+                type="checkbox"
+                [(ngModel)]="question.required"
+                name="required"                
+              >
+            </mz-switch-container>
+          </div>
+        </div>
+        <div class="row">
           <div class="col m3" *ngIf="question.id !== undefined">
             <a href="#" class="grey-text" (click)="deleteQuestion()">
               <i mz-icon-mdi [icon]="'delete'" [size]="'24px'">
